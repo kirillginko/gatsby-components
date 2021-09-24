@@ -22,10 +22,10 @@ body {
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
-    /* background-image: linear-gradient(to right, rgb(224, 168, 168), rgb(235, 87, 87)), url("../images/noise.png"); */
-    background-image:
-    linear-gradient(to right, rgba(245, 168, 168, 0.52), rgba(235, 87, 87, 0.93)),
-    url('../images/noise.png');
+    background-image: linear-gradient(to right, rgb(224, 168, 168), rgb(235, 87, 87));
+    /* background-image: */
+    /* linear-gradient(to right, rgba(245, 168, 168, 0.52), rgba(235, 87, 87, 0.93)),
+    url('../images/noise.png'); */
 
   }
   
@@ -68,5 +68,30 @@ body {
       .hero__title > h1 > span {
         font-size: 10rem;
     }
+  }
+
+  .container::before {
+    animation: grain 13s steps(10) infinite;
+    background-image: url("../images/noise.png");
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+  }
+  
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
   }
   
