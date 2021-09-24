@@ -1,0 +1,72 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizelegibility;
+    overflow-x: hidden;
+    color: hsla(0, 0%, 0%, 0.8);
+    font-family: "MonumentExtended-Regular", serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+    /* background-image: linear-gradient(to right, rgb(224, 168, 168), rgb(235, 87, 87)), url("../images/noise.png"); */
+    background-image:
+    linear-gradient(to right, rgba(245, 168, 168, 0.52), rgba(235, 87, 87, 0.93)),
+    url('../images/noise.png');
+
+  }
+  
+  @font-face {
+    font-family: "MonumentExtended-Regular";
+    src: url("../fonts/MonumentExtended-Regular.woff2");
+  }
+
+  .nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: .7rem;
+
+  }
+
+  .hero {
+      display: flex;
+      bottom: 0vh;
+      justify-content: center;
+      text-align: start;
+      padding: 5rem;
+      margin-top: 2rem;
+      font-size: 2.7rem;
+  }
+  .hero__title > h1 > span {
+    font-size: 4rem;
+}
+
+  @media (min-width: 50rem) {
+      .nav{
+        font-size: 16px;
+      }
+      .hero{
+        font-size: 65px;
+        justify-content: center;
+        text-align: start;
+        margin-top: 5rem;
+      }
+      .hero__title > h1 > span {
+        font-size: 10rem;
+    }
+  }
+  
