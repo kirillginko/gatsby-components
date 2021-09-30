@@ -1,0 +1,33 @@
+.contact__container{
+    margin: 1rem;
+    padding: 1rem;
+    /* border: 4px solid #fff; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "Swis721 BT Roman";
+
+}
+.contact__header{
+    font-size: 1rem;
+    padding: 1rem 0rem;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.contact__links > a{
+    padding: 1rem 1rem;
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    border-top: 4px solid #fff;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+.contact__links > a:hover{
+    color: rgb(0, 0, 0);
+
+}

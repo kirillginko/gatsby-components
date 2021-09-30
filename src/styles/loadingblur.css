@@ -1,0 +1,26 @@
+/* Loader Section */
+
+.bg{
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    top: -30px;
+    left: -30px;
+  }
+  
+  .loading__text{
+  font-family: "Swis721 BT Roman";
+  font-size: 1.875rem;
+  position: absolute;
+  transform: translate(50rem, 25rem);
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }

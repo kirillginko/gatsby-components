@@ -1,0 +1,9 @@
+/* Nav Section */
+.nav{
+    font-family: "Swis721 BT Roman";
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    font-size: .9rem;
+      }
+    

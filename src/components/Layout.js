@@ -4,6 +4,7 @@ import Nav from "../components/Nav"
 import Hero from "../components/Hero"
 import Loader from "../components/Loader"
 import About from "../components/About"
+import Contact from "../components/Contact"
 
 function Layout({ children, location }) {
   const [loading, setIsLoading] = useState(true)
@@ -17,8 +18,9 @@ function Layout({ children, location }) {
         <>
           <div className="container">
             <Nav />
-            <Hero />
             {children}
+            <Hero />
+            <Contact />
             <About />
           </div>
         </>
